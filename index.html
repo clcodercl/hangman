@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hangman</title>
+</head>
+<body>
+<script type="text/javascript">
+
+//keypress
+document.onkeyup = function(event) {
+ 	var gameNum = 0;
+ 	
+
+ 	//this is the user guess
+
+  	var UserGuess = String.fromCharCode(event.keyCode).toLowerCase();
+  	console.log(UserGuess);
+
+
+//creates the word list
+var wordList = ["Happy", "Awesome", "Coder"];
+//wordList.pus("word";
+// for (var i = 0; i < wordList.length; i++)) {
+//			console.log(wordList[i])
+	//}
+
+
+	
+
+// breakout
+	var breakout = wordList[gameNum].split("");
+
+	
+	
+//this is the game loop
+ var displayLetters = ""
+ 	for (var i = 0; i < breakout.length; i++) {
+ 		displayLetters = displayLetters + "_"
+ 	}
+ 	console.log(displayLetters);
+ 	//displays in the hmtl div console.log(displayLetter);
+ 	//console.log(gameNum);
+
+ 	//gameNum++	
+
+//var guessedLetters = [];
+//var wins=0;
+//var losses=0;-->
+
+
+
+
+ 
+
+	// for (var i = 0; i < wordList.length; i++) {
+	// 	console.log(wordList[i]);
+
+    
+	// for (var i ; i >= 0; < Letters.length; i++) {
+	// 	}
+	// 	console.log(WordList[i]);
+	// }
+
+
+// Press any key to get started!
+
+ 
+
+// Wins: (# of times user guessed the word correctly).
+
+// If the word is madonna, display it like this when the game starts: _ _ _ _ _ _ _.
+
+// As the user guesses the correct letters, reveal them: m a d o _ _ a.
+
+// Number of Guesses Remaining: (# of guesses remaining for the user).
+
+// Letters Already Guessed: (Letters the user has guessed, displayed like L Z Y H).
+
+// After the user wins/loses the game should automatically choose another word and make the user play it.
+	
+}
+
+</script>
+</body>
+</html>
